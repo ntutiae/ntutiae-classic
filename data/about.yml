@@ -19,8 +19,35 @@ work_process:
 # team
 team:
   enable: true
-  title : "My Team"
+  title : "成員職掌"
   team_member:
+    - title : "江卓培 教授"
+      image : "images/team/jcp.jpg"
+      education: "國立臺灣科技大學機械工程博士 (現任 智動科 科主任)"
+      lab: "生醫製造與微成型實驗室"
+      area: "積層製造/生物列印與製造/金屬成型加工/牙科力學分析/數位牙醫科技等相關技術"
+      phone: "(02)2771-2171 #4833"
+      location: "綜科館 324"
+      email: "jcp@mail.ntut.edu.tw"
+      
+    - title : "李春穎 教授"
+      image : "images/team/leech.jpg"
+      education: "美國密西根州立大學工程力學博士 (現任 機電學院 院長)"
+      lab: "智慧型材料實驗室"
+      area: "智能材料結構應用、超臨界二氧化碳輔助功能性電鍍、複合材料力學、機械振動、3D列印技術、電腦輔助工程分析"
+      phone: "02)2771-2171 #2070"
+      location: "綜科館 613-C"
+      email: "leech@ntut.edu.tw"
+      
+    - title : "John Doe"
+      image : "images/team/member-3.png"
+      education: ""
+      lab: ""
+      area: ""
+      phone: ""
+      location: ""
+      email: ""
+
     - title : "Jack Schenziwe"
       image : "images/team/member-1.png"
       designation : "Project Manager"

@@ -86,8 +86,8 @@ form_action = "#" # contact form works with : https://formspree.io
 [params.map]
 enable = true
 gmap_api = "https://maps.googleapis.com/maps/api/js?key=&#038;types=(cities)&#038;libraries=places&#038;language=en"
-map_latitude = "51.5223477"
-map_longitude = "-0.1622023"
+map_latitude = "25.043377959894013"
+map_longitude = "121.53768849146095"
 map_marker = "images/marker.png"
 
 # cookies
