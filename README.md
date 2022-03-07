@@ -45,8 +45,13 @@ https://gohugo.io/templates/partials/
 
 ```
 git status
+git log
 git add .                   # 把檔案加入 git 追蹤清單
 git commit -m "message"
-git pull
-git push origin main
+
+# 每次開始寫之前先跑
+git pull                    # 把遠端更新拉到本地
+
+# 每次寫完後跑
+git push origin main        # 把本地更新推到遠端
 ```
