@@ -40,7 +40,7 @@ team:
       email: "leech@ntut.edu.tw"
       
     - title : "吳修明 助理教授"
-      image : "images/team/hmwu.jpg"
+      image : "images/team/hmwu.png"
       education: "國立臺灣科技大學電機博士"
       lab: "先進控制技術實驗室"
       area: "機電整合、智慧型控制、運動控制、機器人學"
@@ -49,7 +49,7 @@ team:
       email: "hmwu@ntut.edu.tw"
 
     - title : "莊政達 助理教授"
-      image : "images/team/ctchuang.jpg"
+      image : "images/team/ctchuang.png"
       education: "國立臺灣大學電機系博士"
       area: "人工智慧、訊號處理"
       phone: "(02)2771-2171 #4861"
@@ -120,7 +120,7 @@ team:
       email: "wpchen@ntut.edu.tw"
 
     - title : "陸元平 副教授"
-      image : "images/team/yuan.jpg"
+      image : "images/team/yuan.bmp"
       education: "美國康乃爾大學土木暨環境工程所博士"
       lab: "資通訊科技(ICT)應用實驗室 (e-Industry Lab)"
       area: "電子化產業經營管理、電腦輔助工程、電腦與網路在製造業上的應用"
