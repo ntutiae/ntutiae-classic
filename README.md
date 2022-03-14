@@ -37,9 +37,20 @@ https://gohugo.io/templates/partials/
 
 把檔案放在 `layouts/partials/*<PARTIALNAME>.html`，然後在其他 layout 裡寫 `{{ partial "<PATH>/<PARTIAL>.html" . }}`
 
-### 填資料
+### 填老師資料
 
 打開 `layouts/about/list.html` 可以看到裡面的資料是來自 site.Data.about.team，site.Data 就是放在 data/ 底下的 xml，
+
+### 填課程資料
+
+建立新課程：
+```
+hugo new courses/國文.md
+```
+會建立 `content/courses/國文.md`，編輯此檔案來放入課程資訊
+
+建議可以寫個爬蟲省時間
+
 
 ## Git 常用指令
 

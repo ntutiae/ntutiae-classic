@@ -39,8 +39,8 @@ name = "Blog"
 weight = 2
 
 [[menu.main]]
-URL = "portfolio"
-name = "Portfolio"
+URL = "courses"
+name = "課程總覽"
 weight = 3
 
 [[menu.main]]
