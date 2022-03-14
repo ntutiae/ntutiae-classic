@@ -129,7 +129,7 @@ team:
       email: "yuan@ntut.edu.tw"
 
     - title : "李志鴻 副教授"
-      image : ""
+      image : "images/team/cL4e.jpg"
       education: "美國卡內基美隆大學機械博士"
       lab: "工業4.0實驗室 (Industry 4.0 Laboratory)"
       area: "網宇實體製造系統(工業4.0)、智能自動化機械開發與設計、高等工程實務分析、工具機結構最佳化、創新機電元件設計、有限元素分析實務、個人捷運系統"
@@ -138,7 +138,7 @@ team:
       email: "cL4e@mail.ntut.edu.tw"
 
     - title : "李仕宇 副教授"
-      image : ""
+      image : "images/team/syntut.jpg"
       education: "國立交通大學機械工程博士"
       lab: "智慧系統實驗室 (Intelligent Systems Lab)"
       area: "智慧資訊安全－互動式授權與加密系統；智慧機械系統開發；智慧型控制與系統模擬；渾沌科技發展與應用；人工智慧與區塊鏈技術應用"
@@ -147,7 +147,7 @@ team:
       email: "syntut@mail.ntut.edu.tw"
 
     - title : "楊侑倫 助理教授"
-      image : ""
+      image : "images/team/y.yang.jpg"
       education: "英國倫敦帝國理工學院博士"
       lab: "金屬成形與數值模擬實驗室"
       area: "金屬成形、材料機械性質、有限元素分析、材料微結構模擬"
@@ -156,7 +156,7 @@ team:
       email: "y.yang@ntut.edu.tw"
 
     - title : "汪家昌 教授"
-      image : ""
+      image : "images/team/jcw.jpg"
       education: "英國利物浦大學工程系博士 (現任 機械系主任)"
       lab: "3D 技術特色實驗室(3D Lab))"
       area: "積層製造(3D列印)技術、逆向工程、精密量測、足鞋驗配"
@@ -165,16 +165,16 @@ team:
       email: "jcw@ntut.edu.tw"
 
     - title : "丁振卿 教授"
-      image : ""
+      image : "images/team/chchting.jpg"
       education: "德國阿亨工業大學工程博士"
       lab: "CCT研究群"
       area: "道路廢氣減量與儲能發電、風力製冷與發電、模組化風力發電、染料敏化奈米太陽光電池製作、光電量測、光催化產氫奈米太陽光電池、全像與顯示、生質潤滑油、電致冷晶片、散熱裝置、聲音發電、聲音顯像、熱流顯像、流體顯像、顯像洩漏偵測"
       phone: "(02)2771-2171 #2075"
       location: "綜科館 714-3"
-      email: "syntut@mail.ntut.edu.tw"
+      email: "chchting@ntut.edu.tw"
 
     - title : "蘇程裕 教授"
-      image : ""
+      image : "images/team/cysu.jpg"
       education: "國立交通大學機械工程研究所"
       lab: "特殊材料製程研究室（SMPL)"
       area: "奈米材料、接合技術、表面工程"
@@ -183,7 +183,7 @@ team:
       email: "cysu@ntut.edu.tw"
 
     - title : "莊賀喬 教授"
-      image : ""
+      image : "images/team/hchuang.jpg"
       education: "美國科羅拉多大學機械博士 (現任 本校研發長)"
       lab: "節能與微系統醫學工程應用實驗室"
       area: "智慧型節能控制盒開發、恆頻與無段變頻節能控制技術開發、超臨界二氧化碳電鍍技術應用於半導體 3D IC 製程、呼吸位移補償系統開發應用於放射線腫瘤治療、微機電封裝製程、超音波分子影像與微氣泡對比劑應用"
@@ -192,7 +192,7 @@ team:
       email: "hchuang@ntut.edu.tw"
 
     - title : "呂志誠 教授"
-      image : ""
+      image : "images/team/cclu23.jpg"
       education: "英國劍橋大學工程博士"
       lab: "先進微系統元件實驗室(AMD Lab)"
       area: "微奈米機電系統、CMOS智慧型微感測器/致動元件 、超精密工程技術"
@@ -201,7 +201,7 @@ team:
       email: "cclu23@ntut.edu.tw"
 
     - title : "蕭俊祥 教授"
-      image : ""
+      image : "images/team/jshaw.jpg"
       education: "美國密西根州立大學機械所博士"
       lab: "系統與控制實驗室（SCL）"
       area: "機電整合、微奈米平台（致動器）定位與振動控制、 ERF 結構控制、噪音控制、自動化技術"
@@ -210,7 +210,7 @@ team:
       email: "jshaw@ntut.edu.tw"
 
     - title : "徐正會 教授"
-      image : ""
+      image : "images/team/jhshyu.jpg"
       education: "美國田納西理工大學機械研究所博士"
       lab: "創意設計實驗室"
       area: "1. Mechanism Synthesis and Analysis 2. Rehabilitation Engineering 3. Biomedical Engineering 4. Exercise Equipment Design 5. Bicycle Mechanism Design 6. Hand Tool Design 7. Vehicle Engineering 8. Railway Vehicle Engineering"
@@ -219,7 +219,7 @@ team:
       email: "jhshyu@ntut.edu.tw"
 
     - title : "黃榮堂 教授"
-      image : ""
+      image : "images/team/jthuang.jpg"
       education: "美國加州大學洛杉磯分校博士"
       lab: "尖端科技實驗室(UTL)"
       area: "MEMS,RFMEMS,RFIC design,computer vision,micromachined sensor,BioMEMS,Remote Diagnosis and maintenance"
@@ -228,7 +228,7 @@ team:
       email: "jthuang@ntut.edu.tw"
 
     - title : "洪祖全 教授"
-      image : ""
+      image : "images/team/tchung.jpg"
       education: "美國加州大學洛杉磯分校機械博士"
       lab: "核能科技實驗室"
       area: "熱傳遞、應用計算流體力學、能源工程、核能安全"
@@ -237,7 +237,7 @@ team:
       email: "tchung@ntut.edu.tw"
 
     - title : "蘇春熺 教授"
-      image : ""
+      image : "images/team/such.jpg"
       education: "美國西北大學博士"
       lab: "機電頻率元件實驗室驗(MFCL)"
       area: "奈米磁性材料之製造檢測與應用、生醫材料之製造、微機電系統"
@@ -246,7 +246,7 @@ team:
       email: "such@ntut.edu.tw"
 
     - title : "許東亞 教授"
-      image : ""
+      image : "images/team/dongyea.jpg"
       education: "日本東京大學精密機械博士 (現任 製造科技研究所 所長)"
       lab: "微細加工實驗室(MML)"
       area: "微細加工技術、微細探針製作、微細放電加工、超微細加工技術、球狀探針加工機之研發"
@@ -255,7 +255,7 @@ team:
       email: "dongyea@ntut.edu.tw"
 
     - title : "吳明川 副教授"
-      image : ""
+      image : "images/team/mcwu.jpg"
       education: "國立臺灣科技大學機械博士"
       lab: "智慧型機械視覺實驗室(IMV Lab)"
       area: "機器視覺與影像處理、自動化光學檢測、振動平衡自動化檢測系統、電腦輔助工程分析"
@@ -264,7 +264,7 @@ team:
       email: "mcwu@ntut.edu.tw"
 
     - title : "蔡定江 副教授"
-      image : ""
+      image : "images/team/tctsai.jpg"
       education: "國立中央大學機械研究所博士"
       lab: "節能與微系統醫學工程應用實驗室"
       area: "機械設計、轉子力學、固體力學、機械震動"
@@ -273,7 +273,7 @@ team:
       email: "tctsai@ntut.edu.tw"
 
     - title : "曾百由 副教授"
-      image : ""
+      image : "images/team/stephen.jpg"
       education: "美國壬色列理工學院機械博士 (現任 機械系副主任)"
       lab: "控制系統分析模擬研究室(CASL)"
       area: "微飛行控制系統設計、模擬及分析、直昇機氣動及氣彈力學、控制理論、結構分析、微電子學、有限元素分析、複合材料、自動化工程、工程技術研發"
@@ -282,7 +282,7 @@ team:
       email: "stephen@ntut.edu.tw"
 
     - title : "葉賜旭 副教授"
-      image : ""
+      image : "images/team/ssyeh.jpg"
       education: "交通大學電機與控制所博士"
       lab: "智慧機電研究室"
       area: "精密運動控制技術、動態系統分析與控制、感測器設計與控制、力量協調操作控制、軟硬體系統與機電整合、機器人技術與應用"
