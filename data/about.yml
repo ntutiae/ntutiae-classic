@@ -291,7 +291,7 @@ team:
       email: "ssyeh@ntut.edu.tw"
 
     - title : "許華倚 副教授"
-      image : "images/team/.huayihsujpg"
+      image : "images/team/huayihsu.jpg"
       education: "美國西北大學機械工程博士"
       lab: "Theoretical and Computational Fluid Dynamics Lab."
       area: "Direct numerical simulation (DNS) of fluid-particle flows, Self-assembly and Electrohydrodynamic (EHD) flows, Hydrophobic and hydrophilic surfaces, Biomechanics, Electro-orientation, A continuum approach to reproduce molecular scale slip behavior"
@@ -300,7 +300,7 @@ team:
       email: "huayihsu@ntut.edu.tw"
 
     - title : "孫殷同 副教授"
-      image : "images/team/.ytsunjpg"
+      image : "images/team/ytsun.jpg"
       education: "美國辛辛那提大學工業工程博士"
       lab: "電腦輔助設計製造與檢測實驗室 (CAD/CAM/CAI Laboratory)"
       area: "電腦輔助設計、製造與檢驗、數位直接製造、製造系統模擬和模擬器"
@@ -399,7 +399,7 @@ team:
       email: "linhe@mail.ntut.edu.tw"
       
     - title : "陳盈君 助理教授"
-      image : "images/team/.jpg"
+      image : "images/team/ycc85.jpg"
       education: "英國牛津大學 醫學科學所 博士 (現任 機械與自動化外國學生專班班主任)"
       lab: "醫學工程實驗室"
       area: "軟骨組織分析、光學、生物力學、電腦模擬、肌肉骨骼科學"
