@@ -407,16 +407,6 @@ team:
       location: "綜科館 616-3"
       email: "ycc85@ntut.edu.tw"
 
-    - title : ""
-      image : "images/team/.jpg"
-      education: ""
-      lab: ""
-      area: ""
-      phone: ""
-      location: ""
-      email: ""
-
-
 
 # client logo slider
 clients_logo_slider:
