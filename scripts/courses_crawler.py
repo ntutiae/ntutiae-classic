@@ -2,6 +2,7 @@ from urllib.request import urlopen
 import pandas as pd
 from bs4 import BeautifulSoup
 import os
+import string
 
 df = pd.DataFrame(columns=["year", 'catctory', 'coursen_name', 'course_eng_name', 'course_number', 'course_score',
                            'course_hours', 'course_dis_chn', 'course_dis_eng', 'href'])
@@ -30,39 +31,43 @@ def course_contants(href):
     rows = []
     for tr in trs:
         for td in tr.find_all('td'):
-            rows.append(
-                [td.text.replace('\n', '').replace('\xa0', '').replace(" ", "").replace('\r', '').replace('\t',
-                                                                                                          '')])  # .replace("]", "").replace("[", "")
+            rows.append(td.text.strip())
     # print(rows)
 
     return rows
 
 
-def md_format(ser):
-    temp = []
+def md_format(**kwargs):
+    tpl = string.Template("""
+---
+title: "$name"
+course_eng_name: "$name_en"
+year: "$year"
+categories: ["$categories"]
+course_number: "$course_number"
+credits: $credits
+hours: $hours
+course_url: "$course_url"
+image: "/images/portfolio/item-2.png"
+---
 
-    for i in ser:
+## 課程大綱
 
-        if type(i) == list:
-            i = i[0]
-        temp.append(i)
+$outline
 
-    ser = temp
+## Course Outline
 
-    # print(ser)
+$outline_en
+""")
+    result = tpl.substitute(**kwargs)
 
-    str_content = "---\ncoursen_name:{0[2]}\ncourse_eng_name:{0[3]}\nyear:{0[0]}\ncatctory:{0[1]}\n" \
-                  "course_number:{0[4]}\ncredits:{0[5]}\nhours:{0[6]}\ncourse_url:{0[9]}\nteacher:\n" \
-                  "---\n\n## 課程大綱\n\n{0[7]}\n" \
-                  "\n\n## Course Outline\n\n{0[8]}\n".format(ser)
+    base = f'iae/{kwargs["year"]}'
 
-    base = "iae/{}/".format(ser[0])
     if not os.path.exists(base):
         os.makedirs(base)
-    pathname = base + '{0}_{1}.md'.format(ser[0], ser[2].replace("/", ""))
-    f = open(pathname, 'w', encoding="utf-8")
-    print(str_content, file=f)
-    f.close()
+    pathname = f'{base}/{kwargs["year"]}_{kwargs["name"].replace("/", "-")}.md'
+    with open(pathname, 'w', encoding="utf-8") as f:
+        f.write(result)
 
 
 for btn_group in semester:
@@ -71,19 +76,19 @@ for btn_group in semester:
     print("-------------------------------------")
     print(semester_year.text, "\n")
 
-    catctory = btn_group.find_all("button", class_=accordion_i)  # 找課程類別
+    category = btn_group.find_all("button", class_=accordion_i)  # 找課程類別
 
     accordion_i = "accordion" + str(i)
 
-    count_catctory = 0
+    count_category = 0
 
     courseS = btn_group.find_all("div", class_="btn-group")  # 找到課程的區塊
 
     for courses in courseS:
 
-        print(catctory[count_catctory].text, "\n")  # 印出課程類別
-        catctory_text = catctory[count_catctory].text
-        count_catctory = count_catctory + 1
+        print(category[count_category].text, "\n")  # 印出課程類別
+        category_text = category[count_category].text
+        count_category = count_category + 1
 
         cours = courses.find_all("button", class_="button")  # 找到區塊裡面的課程
 
@@ -99,12 +104,22 @@ for btn_group in semester:
             rows = course_contants(href)
             rows.append(href)
             # print(rows)
-            ser = [semester_year.text, catctory_text, c.text, rows[2], rows[0], rows[3], rows[4], rows[5], rows[6],
+            ser = [semester_year.text, category_text, c.text, rows[2], rows[0], rows[3], rows[4], rows[5], rows[6],
                    href]
-            print(ser)
             # s = pd.Series(ser,index=["year", 'catctory', 'coursen_name', 'course_eng_name', 'course_number', 'course_score',
             # 'course_hours', 'course_dis_chn', 'course_dis_eng', 'href'])
-            md_format(ser)
+            md_format(
+                name=c.text,
+                name_en=rows[2],
+                year=semester_year.text,
+                categories=category_text,
+                course_number=rows[0],
+                credits=rows[3],
+                hours=rows[4],
+                course_url=href,
+                outline=rows[5],
+                outline_en=rows[6],
+            )
             # 準備儲存
             # df = df.append(s,ignore_index=True)
 
