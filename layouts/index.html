@@ -45,6 +45,7 @@
     <!-- /social icon -->
   </section>
   <!-- /hero area -->
+ 
 
   {{ if site.Data.homepage.about.enable }}
   <!-- about -->
@@ -68,37 +69,56 @@
   {{ end }}
 
 
-  {{ if site.Data.homepage.skill.enable }}
-  {{ with site.Data.homepage.skill }}
-  <!-- skills -->
+  {{ if site.Data.homepage.feature.enable }}
+  {{ with site.Data.homepage.feature }}
+  <!-- features -->
   <section class="section">
     <div class="container">
+      
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-title">{{ .title | markdownify }}</h2>
         </div>
         {{ range .item }}
-        <div class="col-lg-3 col-sm-6 mb-4">
-          <div class="card shadow text-center">
-            <div class="position-relative rounded-top progress-wrapper" data-color="{{.color}}">
-              <div class="wave" data-progress="{{.progress}}"></div>
-            </div>
-            <div class="card-footer bg-white">
-              <h4 class="card-title">{{.title }} ({{.progress}})</h4>
-            </div>
+        <div class="col-lg-4 col-sm-6 mb-30">
+          <div class="feature-block">
+            <input type="radio" name="feature" id="{{.id}}">
+            <label for="{{.id}}">
+              <h4 class="font-secondary">{{ .title }}</h4>
+              <div class="feature-img">
+                <img src="{{.BGimg | relURL }}" class="col-12">
+              </div>
+            </label>
           </div>
         </div>
+        {{ end }}
+        {{ range .item }}
+        <div class="col-12 feature-content {{.id}}">{{ .content }}</div>
         {{ end }}
       </div>
     </div>
   </section>
-  <!-- /skills -->
-  {{ end }}
-  {{ end }}
+  
+  <script>
+    var i = 0;
+    {{ range .item }}
+    var obj[i] = document.getElementById("{{.id}}");
+    console.log(obj.checked);
+    if (obj[i].checked == true){
+      alert("checked!");
+    }
+    i += 1;
+    {{ end }}
+  </script>
 
-  {{ if site.Data.homepage.experience.enable }}
-  {{ with site.Data.homepage.experience }}
-  <!-- experience -->
+  <!-- /features -->
+  {{ end }}
+  {{ end }}
+  
+
+  {{ if site.Data.homepage.AI.enable }}
+  {{ with site.Data.homepage.AI }}
+  <!-- AI -->
   <section class="section">
     <div class="container">
       <div class="row justify-content-around">
@@ -106,23 +126,21 @@
           <h2 class="section-title">{{ .title | markdownify }}</h2>
         </div>
         {{ range .item }}
-        <div class="col-lg-3 col-md-4 text-center">
-          <img src="{{.logo | relURL }}" alt="icon">
-          <p class="mb-0">{{.duration}}</p>
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-60 text-center">
+          <img src="{{ .icon | relURL }}" alt="icon" class="col-lg-10 col-md-8 col-sm-5 col-xs-5 mb-4" width="65%">
           <h4>{{.title }}</h4>
-          <h6 class="text-light">{{.company }}</h6>
         </div>
         {{ end }}
       </div>
     </div>
   </section>
-  <!-- /experience -->
+  <!-- /AI -->
   {{ end }}
   {{ end }}
 
-  {{ if site.Data.homepage.education.enable }}
-  {{ with site.Data.homepage.education }}
-  <!-- education -->
+  {{ if site.Data.homepage.future.enable }}
+  {{ with site.Data.homepage.future }}
+  <!-- future -->
   <section class="section position-relative">
     <div class="container">
       <div class="row">
@@ -133,12 +151,11 @@
         <div class="col-lg-6 col-md-6 mb-80">
           <div class="d-flex">
             <div class="mr-lg-5 mr-3">
-              <i class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
+              <img src="{{.icon | relURL }}" alt="icon">
             </div>
             <div>
-              <p class="text-dark mb-1">{{.year}}</p>
               <h4>{{ .title }}</h4>
-              <p class="mb-0 text-light">{{.academy}}</p>
+              <p class="mb-0 text-light">{{ .content }}</p>
             </div>
           </div>
         </div>
@@ -148,7 +165,7 @@
     <!-- bg image -->
     <img class="img-fluid edu-bg-image w-100" src="{{`images/backgrounds/education-bg.png`|relURL}}" alt="bg-image">
   </section>
-  <!-- /education -->
+  <!-- /future -->
   {{ end }}
   {{ end }}
 

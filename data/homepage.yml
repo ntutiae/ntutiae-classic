@@ -1,6 +1,6 @@
 # banner
 banner:
-  title : "台北科技大學<br>智慧自動化工程科"
+  title : "臺北科技大學<br>智慧自動化工程科"
 
 # about
 about:
@@ -11,71 +11,67 @@ about:
     label : "了解更多"
     URL : "about"
 
-# skill
-skill:
+# feature
+feature:
   enable : true
-  title : "Skills"
+  title : "教學特色"
   item:
-    - title : "Web Design"
-      progress : "90%"
-      color : "#fdb157"
+    - title : "P-TECH"
+      id : "ptech"
+      BGimg : "images/homepage/feature-ptech.jpg"
+      content : "為解決長期以來學術、技術和職場技能脫鉤的問題，P-TECH學校五專班是由產業夥伴與合作學校共同發展能力發展藍圖（Skills Mapping），由產業夥伴向學校提出五專畢業生適合的職務，以及所需工作技能，並依照實際職務需求與老師們共同規劃課程內容並協助授課，以確保學校課程能提供學生未來就業所需技能。除本科所學之外，P-TECH課程也特別著重STEM（Science、Technology、Engineering、Math）的學習。臺灣IBM特別為P-TECH五專班學生規劃一個長達三年的AI人才培育計畫，將雲端運算從概念、應用與實作課程完整囊括。由臺灣IBM雲端運算事業部總經理及資深工程師授課，從雲端技術介紹開始，進一步利用IBM Cloud雲端平臺上的AI技術打造聊天機器人，透過工作坊動手操作與體驗IBM Watson的功能；更規劃IBM TJBot 實作計劃，從數位裝置走向實體機器人，讓學生進一步學習包括語音對話、認知運算、視覺辨識等功能，針對不同的場景設計出專屬的機器人，從初學者成為新時代不可或缺的AI人才！"
       
-    - title : "Logo Design"
-      progress : "60%"
-      color : "#9473e6"
+    - title : "一徒二師制"
+      id : "teachers"
+      BGimg : "images/homepage/feature-teachers.jpg"
+      content : "為協助同學在學期間強化專業技能素養與職場實務鏈結，故推動一徒二師制度，即校內專業導師與業界企業導師共同輔導學生，讓同學們在進行自主學習、製作專題抑或是實習過程中充分得到諮詢資源及專業協助，同時也希望同學們及早了解並預備職場就業或未來研究所升學道路。"
       
-    - title : "After Effects"
-      progress : "80%"
-      color : "#bdecf6"
-      
-    - title : "Web App"
-      progress : "70%"
-      color : "#ffbcaa"
+    - title : "國際移動力"
+      id : "international"
+      BGimg : "images/homepage/feature-international.jpg"
+      content : "為增進學生之國際移動力與國際視野，本班特別加強英文能力之訓練，使其能與國際接軌；除增加英語授課時數外，專一至專四夜間再加強英文訓練，並於專三通過英語檢定。低年級寒/暑假規劃海外企業參訪與觀摩國際競賽；高年級專業課程採中英雙語教學或全英語教學，並規劃國際交換學生學習經歷；此外，由企業導師協助安排海外企業暑期實習或全學期海外企業實習。"
 
-# experience
-experience:
+# AI
+AI:
   enable : true
-  title : "Experience"
+  title : "人工智慧應用領域"
   item: 
-    - logo : "images/experience/icon-1.png"
-      title : "Junior UX Designer"
-      company : "WEBEX"
-      duration : "Jan 2007 - Feb 2009"
+    - icon : "images/homepage/AI-BigData.png"
+      title : "大數據演算"
       
-    - logo : "images/experience/icon-2.png"
-      title : "UX & UI Designer"
-      company : "AUGMEDIX"
-      duration : "Mar 2009 - Aug 2014"
+    - icon : "images/homepage/AI-MachineLearning.png"
+      title : "機器學習"
       
-    - logo : "images/experience/icon-1.png"
-      title : "Senior UI Designer"
-      company : "THEMEFISHER"
-      duration : "Sep 2014 - Present"
+    - icon : "images/homepage/AI-DeepLearning.png"
+      title : "深度學習"
 
-# education
-education:
+    - icon : "images/homepage/AI-SoftwareRobot.png"
+      title : "智慧型代理人"
+
+# future
+future:
   enable : true
-  title : "Education"
+  title : "未來出路"
   item:
-    - title : "Marters in UX Design"
-      year : "2006"
-      academy : "Masassusets Institute of Technology"
+    - icon : "images/experience/icon-2.png"
+      title : "...工程師"
+      content : "blablabla"
       
-    - title : "Honours in Fine Arts"
-      year : "2004"
-      academy : "Harvard University"
+    - icon : "images/experience/icon-2.png"
+      title : "..."
+      content : ""
       
-    - title : "Higher Secondary Certificat"
-      year : "2000"
-      academy : "Cardiff School"
+    - icon : "images/experience/icon-2.png"
+      title : "..."
+      content : ""
       
-    - title : "Secondary School Certificate"
-      year : "1998"
-      academy : "Cardiff School"
+    - icon : "images/experience/icon-2.png"
+      title : "..."
+      content : ""
 
 # service
 service:
-  enable : true
+  enable : false
   title : "Services"
   item:
     - title : "UI Design"
@@ -95,14 +91,14 @@ service:
 
 # portfolio
 portfolio:
-  enable : true
+  enable : false
   title : "Portfolio"
   item_show : 5
   # portfolio item comes from 'data/portfolio.yml' item.
 
 # testimonial
 testimonial:
-  enable : true
+  enable : false
   title : "Testimonials"
   item:
     - name : "Jesica Gomez"
@@ -122,7 +118,7 @@ testimonial:
 
 # client logo slider
 clients_logo_slider:
-  enable : true
+  enable : false
   item:
     - logo : "images/clients-logo/client-logo-1.png"
       URL : "http://examplesite.com"

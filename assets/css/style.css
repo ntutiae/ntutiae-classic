@@ -925,3 +925,45 @@ blockquote {
 .project-meta p{
   margin-bottom: 0;
 }
+
+
+/* 新增 */
+
+/* index.html feature */
+.feature-block label h4, 
+.feature-block label div{
+  cursor: pointer;
+  transition: all 0.6s ease;
+}
+.feature-block label h4{
+  position: absolute;
+  top: 87%;
+  left: 10%;
+  font-size: 40px;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  color: white;
+  z-index: 1;
+}
+.feature-img{
+  margin: 0 15px 0 15px;
+}
+.feature-img img{
+  padding: 0;
+  z-index: -100;
+}
+.feature-block input[type="radio"]{
+  display: none;
+}
+.feature-block label:hover h4, 
+.feature-block label:hover div{
+  transform: scale(1.1, 1.1);
+}
+.feature-block input[type="radio"]:checked .feature-img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.feature-content{
+  display: none;
+}
