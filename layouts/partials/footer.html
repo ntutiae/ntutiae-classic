@@ -33,26 +33,37 @@
 {{ end }}
 
 <!-- footer -->
-<footer class="bg-dark footer-section">
+<footer class="bg-dark footer-section p-0">
   <div class="section">
     <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h5 class="text-light">Email</h5>
-          <p class="text-white paragraph-lg font-secondary"><a href="mailto:{{site.Params.email}}">{{site.Params.email}}</a></p>
+      <div class="row align-items-center">
+        <div class="col-lg-5 col-md-12 mb-30">
+          <img src="{{ site.Params.IAE_logo | relURL }}" class="col-lg-7 col-md-6 col-sm-8">
         </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Phone</h5>
-          <p class="text-white paragraph-lg font-secondary"><a href="tel:{{site.Params.phone}}">{{site.Params.phone}}</a></p>
-        </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Address</h5>
-          <p class="text-white paragraph-lg font-secondary">{{site.Params.address}}</p>
+        <div class="col-lg-6 col-md-12 col align-items-center">
+          <div class="">
+            <h5 class="text-light">Instagram</h5>
+            <p class="text-white paragraph-lg font-secondary"><a href="{{site.Params.instagram_link}}" target="_blank">{{site.Params.instagram}}</a></p>
+          </div>
+          <div class="">
+            <h5 class="text-light">Email</h5>
+            <p class="text-white paragraph-lg font-secondary"><a href="mailto:{{site.Params.email}}">{{site.Params.email}}</a></p>
+          </div>
+          <div class="">
+            <h5 class="text-light">Phone</h5>
+            <p class="text-white paragraph-lg font-secondary"><a href="tel:{{site.Params.phone}}">{{site.Params.phone}}</a></p>
+          </div>
+          <div class="">
+            <h5 class="text-light">Address</h5>
+            <p class="text-white paragraph-lg font-secondary">{{site.Params.address}}</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <div class="footer-bottom border-top text-center border-dark py-5">
+    <p class="mb-0 text-light">{{ site.Params.department_chname }}</p>
+    <p class="mb-3 text-light">{{ site.Params.department_engname }}</p>
     <p class="mb-0 text-light">{{ site.Params.copyright | markdownify }}</p>
   </div>
 </footer>
